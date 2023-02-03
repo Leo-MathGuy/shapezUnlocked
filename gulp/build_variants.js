@@ -45,14 +45,14 @@ const BUILD_VARIANTS = {
         standalone: true,
         steamAppId: 1930750,
         buildArgs: {
-            steamDemo: true,
+            steamDemo: false,
         },
     },
     "standalone-steam-china-demo": {
         standalone: true,
         steamAppId: 1930750,
         buildArgs: {
-            steamDemo: true,
+            steamDemo: false,
             chineseVersion: true,
         },
     },

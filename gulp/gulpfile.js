@@ -314,4 +314,4 @@ gulp.task(
 );
 
 // Default task (dev, localhost)
-gulp.task("default", gulp.series("serve.web-localhost"));
+gulp.task("default", gulp.series("serve.web-shapezio-beta"));
