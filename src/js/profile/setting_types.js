@@ -156,9 +156,7 @@ export class EnumSetting extends BaseSetting {
                 ${
                     available
                         ? ""
-                        : `<span class="standaloneOnlyHint">${
-                              WEB_STEAM_SSO_AUTHENTICATED ? "" : T.demo.settingNotAvailable
-                          }</span>`
+                        : ``
                 }
                 <div class="row">
                     <label>${T.settings.labels[this.id].title}</label>
@@ -240,9 +238,7 @@ export class BoolSetting extends BaseSetting {
             ${
                 available
                     ? ""
-                    : `<span class="standaloneOnlyHint">${
-                          WEB_STEAM_SSO_AUTHENTICATED ? "" : T.demo.settingNotAvailable
-                      }</span>`
+                    : ``
             }
 
             <div class="row">
@@ -306,9 +302,7 @@ export class RangeSetting extends BaseSetting {
             ${
                 available
                     ? ""
-                    : `<span class="standaloneOnlyHint">${
-                          WEB_STEAM_SSO_AUTHENTICATED ? "" : T.demo.settingNotAvailable
-                      }</span>`
+                    : ``
             }
 
             <div class="row">
