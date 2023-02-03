@@ -64,7 +64,7 @@ export class RestrictionManager extends ReadWriteProxy {
      * @returns {boolean}
      */
     getIsStandaloneMarketingActive() {
-        return this.isLimitedVersion();
+        return false;
     }
 
     /**
@@ -72,7 +72,7 @@ export class RestrictionManager extends ReadWriteProxy {
      * @returns {boolean}
      */
     getIsExportingScreenshotsPossible() {
-        return !this.isLimitedVersion();
+        return true;
     }
 
     /**
@@ -80,7 +80,7 @@ export class RestrictionManager extends ReadWriteProxy {
      * @returns {number}
      */
     getMaximumWaypoints() {
-        return this.isLimitedVersion() ? 2 : 1e20;
+        return 1e20;
     }
 
     /**
@@ -88,7 +88,7 @@ export class RestrictionManager extends ReadWriteProxy {
      * @returns {boolean}
      */
     getHasUnlimitedSavegames() {
-        return !this.isLimitedVersion();
+        return true;
     }
 
     /**
@@ -96,7 +96,7 @@ export class RestrictionManager extends ReadWriteProxy {
      * @returns {boolean}
      */
     getHasExtendedSettings() {
-        return !this.isLimitedVersion();
+        return true;
     }
 
     /**
@@ -104,7 +104,7 @@ export class RestrictionManager extends ReadWriteProxy {
      * @returns {boolean}
      */
     getHasExtendedUpgrades() {
-        return !this.isLimitedVersion();
+        return true;
     }
 
     /**
@@ -112,6 +112,6 @@ export class RestrictionManager extends ReadWriteProxy {
      * @returns {boolean}
      */
     getHasExtendedLevelsAndFreeplay() {
-        return !this.isLimitedVersion();
+        return true;
     }
 }
